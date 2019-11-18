@@ -1,4 +1,4 @@
-# Bundler-audit-docker
+# Bundler-audit
 
 This is a little docker container to check a `Gemfile.lock` for vulnerabilities.
 
