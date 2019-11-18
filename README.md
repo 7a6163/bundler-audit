@@ -25,3 +25,6 @@ After downloading the container image you can run it by using the `docker run` c
 **Running from outside the directory where the `Gemfile.lock` is located.**
 `docker run --rm -v /home/user/project:/tmp sdbrett/bundler-audit`
 
+The default usage will not perform additional `ruby-advisory-db` updates. You can perform these at run time by adding the `with_updates` flag to `docker run`
+
+`docker run --rm -v $(pwd):/tmp sdbrett/bundler-audit with_updates`
